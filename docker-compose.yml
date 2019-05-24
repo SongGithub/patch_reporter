@@ -1,0 +1,17 @@
+---
+version: '2.2'
+
+services:
+  base:
+    build: .
+    working_dir: /app
+    volumes:
+      - $PWD:/app
+
+  datetime:
+    extends: base
+    command: python --version
+
+  tests:
+    extends: base
+    command: python run test
