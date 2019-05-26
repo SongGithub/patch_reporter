@@ -8,10 +8,12 @@ services:
     volumes:
       - $PWD:/app
 
-  datetime:
+  dev:
     extends: base
+    volumes:
+      - ~/.aws:/root/.aws
     command: python --version
 
-  tests:
+  test:
     extends: base
-    command: python run test
+    command: pytest

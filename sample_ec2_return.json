@@ -1,0 +1,111 @@
+[
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-0fb7513bcdc525c3b",
+    "InstanceId": "i-0401b7ee0ecaab12f",
+    "InstanceType": "t2.micro",
+    "KeyName": "201905",
+    "LaunchTime": "datetime.datetime(2019, 5, 24, 12, 50, 28, tzinfo=tzlocal())",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "ap-southeast-2c",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-192-168-0-8.ap-southeast-2.compute.internal",
+    "PrivateIpAddress": "192.168.0.8",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "State": {
+      "Code": 16,
+      "Name": "running"
+    },
+    "StateTransitionReason": "",
+    "SubnetId": "subnet-00f88c18c946b642e",
+    "VpcId": "vpc-08b781d70953811b0",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/xvda",
+        "Ebs": {
+          "AttachTime": "datetime.datetime(2019, 5, 24, 12, 50, 28, tzinfo=tzlocal())",
+          "DeleteOnTermination": "True",
+          "Status": "attached",
+          "VolumeId": "vol-058fbb6f1332122a8"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": "False",
+    "EnaSupport": "True",
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "datetime.datetime(2019, 5, 24, 12, 50, 28, tzinfo=tzlocal())",
+          "AttachmentId": "eni-attach-083b5b5a00fc02bf1",
+          "DeleteOnTermination": "True",
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "launch-wizard-2",
+            "GroupId": "sg-0b0809ac1d764ff54"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "0a:bd:43:31:38:ae",
+        "NetworkInterfaceId": "eni-04c1ced9e5173e586",
+        "OwnerId": "126077321144",
+        "PrivateDnsName": "ip-192-168-0-8.ap-southeast-2.compute.internal",
+        "PrivateIpAddress": "192.168.0.8",
+        "PrivateIpAddresses": [
+          {
+            "Primary": "True",
+            "PrivateDnsName": "ip-192-168-0-8.ap-southeast-2.compute.internal",
+            "PrivateIpAddress": "192.168.0.8"
+          }
+        ],
+        "SourceDestCheck": "True",
+        "Status": "in-use",
+        "SubnetId": "subnet-00f88c18c946b642e",
+        "VpcId": "vpc-08b781d70953811b0",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/xvda",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "launch-wizard-2",
+        "GroupId": "sg-0b0809ac1d764ff54"
+      }
+    ],
+    "SourceDestCheck": "True",
+    "Tags": [
+      {
+        "Key": "key2",
+        "Value": "val2"
+      },
+      {
+        "Key": "key1",
+        "Value": "val1"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": "False"
+    }
+  }
+]
